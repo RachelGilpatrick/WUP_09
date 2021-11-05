@@ -14,6 +14,13 @@ require(tigerstats)
 require(tidyverse)
 ```
 
+
+```{r}
+Fish=read.csv("Fish.csv")
+```
+
+
+
 # Introduction
 
 <!--In this section you explain what you are trying to show.  Where did the data come from?  What is the research or other question you are trying to answer?!-->
@@ -25,6 +32,16 @@ require(tidyverse)
 # Methods
 
 <!--Decide on your methods:  use "variable analysis" or other appropriate descriptors.  Make sure to choose at least one graphical method and at least one numerical method.!-->
+
+subset of fish that contains the species I want to analyze, then I will look at how well each combination of the predictor variables can predict the weight of the fish.
+
+
+```{r}
+perch=filter(Fish,Species=="Perch")
+```
+
+
+
 
 #Results
 
